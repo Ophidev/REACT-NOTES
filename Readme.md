@@ -37,27 +37,26 @@ Here you'll find hands-on code, theory, and experiments as I explored React and 
 ## 🗂️ Folder Structure
 
 ```mermaid
-graph TD
-    A[ReactNotes]
-    A --> B(REACT LEC 1)
+graph TB
+    A[ReactNotes] --> B(REACT LEC 1)
     B --> B1[App.js]
     B --> B2[index.html]
-    A --> C(REACT LEC 2)
-    A --> D(REACT LEC 3)
-    A --> E(REACT LEC 4)
-    A --> F(REACT LEC 5)
-    A --> G(REACT LEC 6)
-    A --> H(REACT LEC 7)
-    A --> I(REACT LEC 8)
-    A --> J(REACT LEC 9)
-    A --> K(REACT LEC 10)
-    A --> L(REACT LEC 11)
-    A --> M(REACT LEC 12)
-    A --> N(REACT LEC 13)
-    A --> O(REACT LEC 14)
-    A --> P(REACT SomeOtherHooks)
-    A --> Q[images/]
-    A --> R[pdf+ExtraNotes/]
+    B2 --> C(REACT LEC 2)
+    C --> D(REACT LEC 3)
+    D --> E(REACT LEC 4)
+    E --> F(REACT LEC 5)
+    F --> G(REACT LEC 6)
+    G --> H(REACT LEC 7)
+    H --> I(REACT LEC 8)
+    I --> J(REACT LEC 9)
+    J --> K(REACT LEC 10)
+    K --> L(REACT LEC 11)
+    L --> M(REACT LEC 12)
+    M --> N(REACT LEC 13)
+    N --> O(REACT LEC 14)
+    O --> P(REACT SomeOtherHooks)
+    P --> Q[images/]
+    Q --> R[pdf+ExtraNotes/]
 ```
 ## ✨ Highlights
 
