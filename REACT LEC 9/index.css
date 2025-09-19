@@ -1,0 +1,256 @@
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+#Header{
+
+    width:100vw;
+    display:flex;
+    background-color: rgb(110, 29, 186);
+    color:white;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
+
+}
+
+#logo{
+
+   width:50px;
+   
+}
+
+#navbar>ul{
+
+    display: flex;
+    list-style-type: none;
+    gap:10px;
+  
+
+}
+
+
+
+/*Body Style */
+
+
+.CardsInsideBody{
+    display: flex;
+    flex-wrap:wrap;
+    padding:20px;
+    gap:5px;
+
+}
+
+.cards>img{
+
+    width:150px;
+}
+
+.cards{
+
+    display: flex;
+    flex-direction: column;
+    width:200px;
+    border: solid 1px black;
+    border-radius: 5px;
+    padding:20px;
+    gap:5px;
+
+
+}
+
+
+.Search-Container{
+   
+    display: flex;
+    position: relative;
+    /* border:solid 1px black; */
+    width:300px;
+    padding:10px;
+    align-items: center;
+    justify-content: center;
+    left:35%;
+    gap:10px;
+    top:10px;
+
+}
+
+
+.Search-Container>input{
+
+  width:200px;
+  height: 30px;
+  padding:10px;
+  outline-color: black;
+  border: solid black 2px;
+  border-radius:5px;
+    
+}
+
+#SearchBtn{
+
+    width:60px;
+    height: 30px;
+    outline-color: black;
+    border: solid rgb(169, 251, 5) 2px;
+    border-radius:5px;
+    background-color:#6d1bb9;
+    color:white;
+   
+
+}
+
+/*Shimmer UI Styles*/
+
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding:20px;
+  justify-content: center;
+}
+.shimmer-card {
+  flex-basis: 250px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-color: #d3d5df;
+  box-shadow: 0 4px 7px 0 rgb(218 220 230 / 60%);
+}
+.shimmer-title {
+  width: 60%;
+  margin-top: 10px;
+}
+.shimmer-tags {
+  width: 80%;
+  margin-top: 4px;
+}
+.shimmer-details {
+  width: 100%;
+  margin-top: 18px;
+}
+.shimmer-container .shimmer-img {
+  height: 144px;
+  width: 230px;
+}
+
+
+
+/*Animation to Shimmer Component Cards */
+.stroke {
+  height: 15px;
+  background: #777;
+}
+.animate {
+  animation: shimmer 3s;
+  animation-iteration-count: infinite;
+  background: linear-gradient(to right, #e6e6e6 5%, #cccccc 25%, #e6e6e6 35%);
+  background-size: 1000px 100%;
+}
+@keyframes shimmer {
+  from {
+    background-position: -1000px 0;
+  }
+  to {
+    background-position: 1000px 0;
+  }
+}
+
+
+/*LoggedIn and LoggedOut Button Style*/
+
+.loggedInBtn, .loggedOutBtn{
+
+  width:60px;
+  height: 30px;
+  outline-color: black;
+  border: solid #6d1bb9 2px;
+  border-radius:5px;
+  background-color: rgb(169, 251, 5);
+  color:#6d1bb9;
+  cursor: pointer;
+
+}
+
+
+
+/*RestaurantMenu*/
+
+.menuContainer{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.menuOfDiv{
+
+  display:flex;
+  padding:10px;
+  gap:10px;
+  border: solid 5px black;
+  margin:10px;
+  align-items: center;
+}
+
+.menuOfDiv >img{
+
+  width:500px;
+  margin-bottom:10px;
+}
+
+/*Menu*/
+.menuListContainer{
+
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+  align-items: center;
+ 
+
+}
+
+
+
+.menuList{
+  display: flex;
+  width:500px;
+  gap:10px;
+  border: solid 2px black;
+  margin:10px;
+  align-items: center;
+  justify-content: center;
+
+}
+.menuListDetails{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:5px;
+}
+
+
+
+
+/*About us Style*/
+
+.About-us{
+
+   border:solid 2px black;
+   margin:20px;
+   padding:5px;
+}
+
+.Profile{
+
+  border:solid 2px red;
+  
+}

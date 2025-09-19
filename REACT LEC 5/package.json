@@ -1,0 +1,29 @@
+{
+  "name": "react-lec-5",
+  "version": "1.0.0",
+  "description": "\"Staring a lecture 5 of React\"",
+
+  "scripts": {
+    "start":"parcel index.html",
+    "build": "parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdityaBhatt37/REACT.git#main"
+  },
+  "author": "\"Aditya Bhatt\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdityaBhatt37/REACT/issues"
+  },
+  "homepage": "https://github.com/AdityaBhatt37/REACT/tree/main#readme",
+  "devDependencies": {
+    "parcel": "^2.13.2",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste React</title>
+</head>
+<body>
+    
+    <div id="root"> NOT Render
+
+        <!-- <h1>NAMASTE REACT</h1>  -> USING HTML -->
+
+        <!-- <h2>This is a h2 tag which will not render in our browser 
+            because it is written inside the root div which is now the root element
+            of our react
+        </h2> -->
+
+    </div>
+
+    <!-- <script>
+
+        let heading = document.createElement('h1');
+        heading.innerHTML = "NAMASTE REACT";
+
+        let root = document.getElementById("root");
+
+        root.appendChild(heading);
+
+    </script> -> This is using the Java Script-->
+
+
+
+
+    <!--Now injecting react library inside our html file-->
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+<!--The above two lines are the CDN links of React and the minimum code of the react 
+    that means we have inserted the react in our code.
+    React is nothing but js code written by facebook tems for us.
+    
+    Question-> Why there is two CDN files for injecting the React?
+    
+    Answer -> See React is not just for browser only there is React native also
+              so First file which is react@18 is core library of React, 
+              and Second file which is react-dom@18 is the browser library of React
+              which give us access of ReactDOM and @18 means version 18 which is a latest version.-->
+
+
+
+
+<!--Now creating Heading using React-->
+
+<!-- <script>
+
+    const heading = React.createElement("h1", {}, "NAMASTE REACT");
+
+    //{} -> inside this empty brases we can give id,class etc.. to our element which we have created.
+    //      also check in the console that how DOM render it.
+
+    //To run the react code we have to define/create a root element 
+
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+
+    //so the above code means that -- 
+    //ReactDOM.createRoot() -- defines the root element where our react will be run for the browsers.
+
+
+    root.render(heading); //render the heading inside the root element.
+    
+
+</script> -->
+
+<script>
+
+ const heading = React.createElement("h1", {id:"headingElement"}, "Namaste React");
+ 
+ console.log(heading) // output will be a object of type h1.
+ 
+ const root = ReactDOM.createRoot(document.getElementById("root"));
+
+
+ //passing a react element in a root
+ root.render(heading);
+
+
+ //React elements are just Objects of JS and nothing else.
+
+</script>
+
+</body>
+</html>
