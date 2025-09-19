@@ -38,7 +38,10 @@ Here you'll find hands-on code, theory, and experiments as I explored React and 
 
 ```mermaid
 graph TD
-    A[ReactNotes] --> B(REACT LEC 1)
+    A[ReactNotes]
+    A --> B(REACT LEC 1)
+    B --> B1[App.js]
+    B --> B2[index.html]
     A --> C(REACT LEC 2)
     A --> D(REACT LEC 3)
     A --> E(REACT LEC 4)
@@ -55,10 +58,7 @@ graph TD
     A --> P(REACT SomeOtherHooks)
     A --> Q[images/]
     A --> R[pdf+ExtraNotes/]
-    B --> B1[App.js]
-    B --> B2[index.html]
-    %% ...and so on for each lecture
-````
+```
 ## ✨ Highlights
 
 - **Comprehensive Notes:** Markdown notes for each lecture, including theory and code.
